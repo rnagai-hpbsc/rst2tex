@@ -214,7 +214,9 @@ def main():
             l = l.replace(r''' <htt''',r''' \href{htt''')
             websearch = l.split(r''' \href{htt''')
             if len(websearch)>1:
+                l = websearch[0]
                 for i in range(len(websearch)-1):
+                    l += r''' \href{htt''' + websearch[i+1]
                     text = websearch[i].split(r''' `''')[-1]
                     l = l.replace(r''' `'''+text,'')
                     l = l.replace(r'''>`_\ ''',r'''}{'''+text+r'''}''')
