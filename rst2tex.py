@@ -279,8 +279,8 @@ def preamble():
             backend=biber]
             {biblatex}
 \renewbibmacro{in:}{}
-\DeclareFieldFormat*{title}{\textit{``#1``}}
-\DeclareFieldFormat*{citetitle}{\textit{``#1``}}
+\DeclareFieldFormat*{title}{\textit{``#1''}}
+\DeclareFieldFormat*{citetitle}{\textit{``#1''}}
 
 \lstset{basicstyle={\ttfamily\small},
         backgroundcolor={\color[gray]{.95}},
